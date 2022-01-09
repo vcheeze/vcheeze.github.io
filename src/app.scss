@@ -1,10 +1,21 @@
-@import './styles/fonts/gambetta';
-@import './styles/fonts/satoshi';
+@import './styles/theme.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 :root {
   font-family: Satoshi, Arial, -apple-system, 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: Gambetta, Georgia, 'Times New Roman', Times, serif;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
 }
