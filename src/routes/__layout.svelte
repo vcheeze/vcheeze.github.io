@@ -1,5 +1,7 @@
 <script lang="ts">
-  import '../app.css';
+  import githubUrl from 'iconoir/icons/github-outline.svg';
+  import linkedinUrl from 'iconoir/icons/linkedin.svg';
+  import '../app.scss';
 </script>
 
 <main>
@@ -7,17 +9,23 @@
 </main>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+  <p>
+    <a href="https://linkedin.com/in/peterweichen" target="_blank"><img src={linkedinUrl} alt="GitHub" /></a>
+    <a href="https://github.com/vcheeze" target="_blank"><img src={githubUrl} alt="LinkedIn" /></a>
+		<span>or email me at <a href="mailto:peter.wei.chen212@gmail.com">peter.wei.chen212@gmail.com</a></span>
+  </p>
 </footer>
 
-<style>
+<style lang="scss">
+	@import '../styles/theme.scss';
+	
 	main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		// padding: 1rem;
 		width: 100%;
-		max-width: 1024px;
+		// max-width: 1024px;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -28,10 +36,14 @@
 		justify-content: center;
 		align-items: center;
 		padding: 40px;
-	}
+		
+		p {
+			display: flex;
 
-	footer a {
-		font-weight: bold;
+			a {
+				margin-right: 0.5rem;
+			}
+		}
 	}
 
 	@media (min-width: 480px) {

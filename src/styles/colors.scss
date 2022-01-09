@@ -1,0 +1,29 @@
+/*===== theme colors ===== */
+// colors (including their names) taken from coolors.co
+$champagne: #F3E9D2;
+$teaGreen: #C6DABF;
+$grannySmithApple: #88D498;
+$illuminatingEmerald: #1A936F;
+$midnightGreenEagleGreen: #114B5F;
+
+// general colors
+$white: #FFFFFF;
+$black: #000000;
+
+
+/*===== palette using colors defined above =====*/
+// general colors
+$primary-color: $illuminatingEmerald;
+$accent-color: $grannySmithApple;
+
+$text-color: $black;
+
+
+a {
+  color: $midnightGreenEagleGreen;
+  text-decoration: none;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
